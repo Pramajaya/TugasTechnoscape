@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA_Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Hackathon</title>
+  </head>
+  <style>
+    /*navbar*/
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 6%;
+      border-bottom: 2px solid #faff00;
+      border-color: #faff00;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .logo-container a {
+      width: 50px;
+      height: 50px;
+      text-decoration: none;
+      color: #faff00;
+    }
+
+    .list-container li {
+      list-style: none;
+      display: inline-block;
+      padding: 0px 20px;
+      font-size: 15px;
+    }
+
+    .list-container li a {
+      transition: all 0.3s ease 0s;
+      text-decoration: none;
+      color: #faff00;
+    }
+
+    .list-container li a:hover {
+      color: #bfa8ff;
+    }
+
+    span {
+      font-family: "Josefin Sans", sans-serif;
+    }
+    button {
+      padding: 9px 25px;
+      background-color: #081d29;
+      border: 2px;
+      border-radius: 50px;
+      border-style: solid;
+      border-color: #faff00;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      color: #faff00;
+    }
+
+    button:hover {
+      background-color: #faff00;
+    }
+    button span:hover {
+      color: #081d29;
+    }
+    /*navbar*/
+
+    /*body*/
+    /*main*/
+    .main-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .main-teks h1 {
+      font-size: 150px;
+      margin-bottom: 0px;
+    }
+
+    .main-teks h2 {
+      font-size: 37px;
+      margin-bottom: 90px;
+      margin-top: 0px;
+      color: white;
+      font-weight: lighter;
+    }
+
+    .main-button button {
+      height: 50px;
+      width: 200px;
+    }
+
+    .main-button span {
+      font-size: 25px;
+    }
+    /*main*/
+
+    /*about us*/
+    .about-us-teks-1 {
+      margin-top: 200px;
+      margin-left: 200px;
+      font-size: 40px;
+    }
+
+    .about-us-teks-2 {
+      margin: 0px 300px;
+      margin-bottom: 130px;
+      text-align: justify;
+      font-size: 40px;
+    }
+    /*about us*/
+
+    /*sponsor*/
+    .sponsor-title {
+      text-align: center;
+    }
+
+    .sponsor-title h2 {
+      font-size: 50px;
+    }
+
+    .sponsor-container {
+      margin: 0px 450px;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      flex-direction: column;
+      border: 2px solid;
+      border-radius: 50px;
+    }
+
+    .sponsor-platinum-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .platinum-img-container img {
+      width: 300px;
+    }
+
+    .sponsor-gold-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .sponsor-gold-container h2 {
+      margin-bottom: 0px;
+    }
+
+    .gold-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0px;
+    }
+
+    .gold-1 {
+      width: 250px;
+    }
+
+    .gold-2 {
+      width: 160px;
+    }
+
+    .sponsor-silver-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+
+    .silver-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .silver-1 {
+      width: 150px;
+    }
+
+    .silver-2 {
+      width: 200px;
+    }
+
+    .silver-3 {
+      width: 250px;
+    }
+
+    .silver-4 {
+      width: 200px;
+    }
+
+    .silver-5 {
+      width: 200px;
+    }
+    /*sponsor*/
+
+    /*media partner*/
+    @keyframes slide {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(calc(-50%));
+      }
+    }
+
+    .media-partner-container {
+      margin-top: 100px;
+      margin-bottom: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .media-partner-container h2 {
+      font-size: 50px;
+      margin-bottom: 25px;
+    }
+
+    .media-partner-logo-container {
+      white-space: nowrap;
+      padding: 55px 0px 55px 0px;
+      background-color: black;
+      border: 10px solid #faff00;
+    }
+
+    .logo-slide-container {
+      display: inline-block;
+      animation: 10s slide infinite linear;
+    }
+
+    .logo-slide-container img {
+      width: 200px;
+      margin: 0px 50px;
+    }
+    /*media partner*/
+    /*body*/
+
+    /*footer*/
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      height: 450px;
+      background-color: #262626;
+      margin-top: 100px;
+      padding: 0px 50px;
+      padding-top: 20px;
+      margin-right: 0px;
+    }
+
+    .top-footer-container {
+      width: 1350px;
+      display: flex;
+
+      justify-content: space-between;
+    }
+
+    .organization-container img {
+      width: 400px;
+    }
+
+    .social-media-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .social-media-container img {
+      width: 40px;
+      background-color: #faff00;
+      border-radius: 10px;
+    }
+
+    .right-footer-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-list-container {
+      margin-right: 20px;
+      border-left: 3px solid #faff00;
+      border-right: 3px solid #faff00;
+      padding-bottom: 200px;
+      padding-right: 40px;
+    }
+
+    .footer-list-container li {
+      list-style: none;
+      margin-bottom: 15px;
+    }
+
+    .footer-list-container a {
+      text-decoration: none;
+      color: #faff00;
+    }
+
+    .contact-us-container {
+      height: 360px;
+      width: 300px;
+    }
+
+    .contact-us-container h2 {
+      font-size: 30px;
+    }
+
+    .email-input {
+      border: solid #faff00;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      padding: 5px 5px;
+    }
+
+    .email-input input {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: none;
+      color: #faff00;
+    }
+
+    .question-input {
+      border: solid #faff00;
+      border-radius: 15px;
+      height: 100px;
+      padding: 5px 5px;
+    }
+
+    .question-input textarea {
+      width: 100%;
+      height: 90%;
+      background-color: transparent;
+      border: none;
+      resize: none;
+      color: #faff00;
+    }
+
+    .contact-us-button {
+      margin-top: 90px;
+    }
+
+    .contact-us-button button {
+      width: 100%;
+    }
+
+    .bottom-footer-container {
+      background-color: #faff00;
+      width: 1465px;
+    }
+
+    .bottom-footer-container p {
+      color: #081d29;
+      margin-left: 90px;
+    }
+    /*footer*/
+  </style>
+  <body
+    style="
+      background-color: #081d29;
+      font-family: 'Josefin Sans', sans-serif;
+      color: #faff00;
+    "
+  >
+    <header style="background-color: #081d29">
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="index.html"><h3>HACKATHON</h3></a>
+        </div>
+        <div class="list-container">
+          <ul>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#sponsor">Sponsor</a></li>
+            <li><a href="#media-partner">Media Partner</a></li>
+          </ul>
+        </div>
+        <div class="button-container">
+          <button type="button" onclick="location.href='login.html'">
+            <span>Login</span>
+          </button>
+          <button type="button" onclick="location.href='register.html'">
+            <span>Registrasi</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="body-container">
+      <div class="main-container">
+        <div class="main-teks">
+          <h1>HACKATHON</h1>
+          <h2>Develop Inventive Solutions and Produce Them into Code</h2>
+        </div>
+        <div class="main-button">
+          <button type="button" onclick="location.href='register.html'">
+            <span>Registrasi</span>
+          </button>
+        </div>
+      </div>
+      <div title="about-us-container">
+        <div class="about-us-teks-1">
+          <h1 id="about-us">About Us</h1>
+        </div>
+        <div class="about-us-teks-2">
+          <p>
+            Hackathon merupakan puncak dari TechnoScape berupa kompetisi coding
+            secara offline selama 48 jam, di mana setiap tim bersaing untuk
+            membuat aplikasi atau situs web inovatif yang dapat memecahkan
+            permasalahan di kehidupan nyata. Peserta berkesempatan untuk
+            berinteraksi dengan para mentor dalam sesi mentoring bisnis,
+            teknologi, dan desain
+          </p>
+        </div>
+      </div>
+      <div title="main-sponsor-container">
+        <div class="sponsor-title">
+          <h2 id="sponsor">Sponsor</h2>
+        </div>
+        <div class="sponsor-container">
+          <div class="sponsor-platinum-container">
+            <h2>Platinum</h2>
+            <div class="platinum-img-container">
+              <img src="asset/bankneo.png" alt="bankneo" />
+            </div>
+          </div>
+          <div class="sponsor-gold-container">
+            <h2>Gold</h2>
+            <div class="gold-img-container">
+              <img class="gold-1" src="asset/hacktiv8.png" alt="hacktiv8" />
+              <img class="gold-2" src="asset/myrepublic.png" alt="myrepublic" />
+            </div>
+          </div>
+          <div class="sponsor-silver-container">
+            <h2>Silver</h2>
+            <div class="silver-img-container">
+              <img class="silver-1" src="asset/progate.png" alt="progate" />
+              <img
+                class="silver-2"
+                src="asset/cakeresume.png"
+                alt="cakeresume"
+              />
+              <img class="silver-3" src="asset/msi.png" alt="msi" />
+              <img class="silver-4" src="asset/exabytes.png" alt="exabytes" />
+              <img class="silver-5" src="asset/glair.png" alt="glair" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="media-partner-container">
+        <h2 id="media-partner">Media Partner</h2>
+        <div class="media-partner-logo-container">
+          <div class="logo-slide-container">
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+          </div>
+          <div class="logo-slide-container">
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+            <img src="asset/comingsoon.png" alt="comingsoon" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="top-footer-container">
+          <div class="left-footer-container">
+            <div class="organization-container">
+              <h2>Organized By</h2>
+              <img src="asset/bncc.png" alt="bncc" />
+            </div>
+            <div class="social-media-container">
+              <a href="https://www.instagram.com/bnccbinus/"
+                ><img src="asset/instagram.svg" alt=""
+              /></a>
+              <a
+                href="https://www.facebook.com/bina.nusantara.computer.club/?locale=id_ID"
+                ><img src="asset/facebook.svg" alt=""
+              /></a>
+              <a href="https://twitter.com/BNCC_Binus"
+                ><img src="asset/tweeter.svg" alt=""
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/bina-nusantara-computer-club/?originalSubdomain=id"
+                ><img src="asset/linkedin.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="right-footer-container">
+            <div class="footer-list-container">
+              <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Registrasi</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#sponsor">Sponsor</a></li>
+                <li><a href="#media-partner">Media Partner</a></li>
+              </ul>
+            </div>
+            <div class="contact-us-container">
+              <h2>Contact Us</h2>
+              <div class="email-input">
+                <input type="text" placeholder="Email" required />
+              </div>
+              <div class="question-input">
+                <textarea cols="30" rows="10" placeholder="Question"></textarea>
+              </div>
+              <div class="contact-us-button">
+                <button type="button" onclick="location.href='#'">
+                  <span>Send</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer-container">
+          <p>All Right Reserved BNCC 2023 C Bina Nusantara Computer Club</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

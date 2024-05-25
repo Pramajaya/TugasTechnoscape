@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA_Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Registrasi</title>
+  </head>
+  <style>
+    /*navbar*/
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 6%;
+      border-bottom: 2px solid #faff00;
+      border-color: #faff00;
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .logo-container a {
+      width: 50px;
+      height: 50px;
+      text-decoration: none;
+      color: #faff00;
+    }
+
+    .list-container li {
+      list-style: none;
+      display: inline-block;
+      padding: 0px 20px;
+      font-size: 15px;
+    }
+
+    .list-container li a {
+      transition: all 0.3s ease 0s;
+      text-decoration: none;
+      color: #faff00;
+    }
+
+    .list-container li a:hover {
+      color: #bfa8ff;
+    }
+
+    span {
+      font-family: "Josefin Sans", sans-serif;
+    }
+    button {
+      padding: 9px 25px;
+      background-color: #081d29;
+      border: 2px;
+      border-radius: 50px;
+      border-style: solid;
+      border-color: #faff00;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      color: #faff00;
+    }
+
+    button:hover {
+      background-color: #faff00;
+    }
+    button span:hover {
+      color: #081d29;
+    }
+    /*navbar*/
+
+    /*body*/
+    .register-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #faff00;
+      flex-direction: column;
+      margin: 80px 550px;
+      padding: 35px 0px 35px 0px;
+    }
+
+    .username-input {
+      border: 2px solid yellow;
+      border-radius: 15px;
+      width: 70%;
+      padding: 5px 5px;
+      margin-bottom: 10px;
+    }
+
+    .username-input input {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: none;
+      color: #faff00;
+    }
+
+    .email-input {
+      border: 2px solid yellow;
+      border-radius: 15px;
+      width: 70%;
+      padding: 5px 5px;
+      margin-bottom: 10px;
+    }
+
+    .email-input input {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: none;
+      color: #faff00;
+    }
+
+    .password-input {
+      border: 2px solid yellow;
+      border-radius: 15px;
+      width: 70%;
+      padding: 5px 5px;
+      margin-bottom: 10px;
+    }
+
+    .password-input input {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: none;
+      color: #faff00;
+    }
+
+    .con-pass-input {
+      border: 2px solid yellow;
+      border-radius: 15px;
+      width: 70%;
+      padding: 5px 5px;
+    }
+
+    .con-pass-input input {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: none;
+      color: #faff00;
+    }
+
+    .register-container p {
+      font-weight: 200;
+    }
+
+    a {
+      text-decoration: none;
+      color: #bfa8ff;
+    }
+
+    .register-button {
+      margin-top: 90px;
+    }
+
+    .register-button button {
+      width: 100%;
+    }
+    /*body*/
+  </style>
+  <body
+    style="
+      background-color: #081d29;
+      font-family: 'Josefin Sans', sans-serif;
+      color: #faff00;
+    "
+  >
+    <header style="background-color: #081d29">
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="index.html"><h3>HACKATHON</h3></a>
+        </div>
+        <div class="list-container">
+          <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">Sponsor</a></li>
+            <li><a href="index.html">Media Partner</a></li>
+          </ul>
+        </div>
+        <div class="button-container">
+          <button type="button" onclick="location.href='login.html'">
+            <span>Login</span>
+          </button>
+          <button type="button" onclick="location.href='register.html'">
+            <span>Registrasi</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="register-container">
+      <h2>Registrasi</h2>
+      <div class="username-input">
+        <input type="text" placeholder="Username" required />
+      </div>
+      <div class="email-input">
+        <input type="text" placeholder="Email" required />
+      </div>
+      <div class="password-input">
+        <input type="text" placeholder="Password" required />
+      </div>
+      <div class="con-pass-input">
+        <input type="text" placeholder="Confirm Password" required />
+      </div>
+      <p>Sudah mempunyai akun? <a href="login.html">Login</a></p>
+      <div class="register-button">
+        <button type="button" onclick="location.href='index.html'">
+          <span>Send</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
